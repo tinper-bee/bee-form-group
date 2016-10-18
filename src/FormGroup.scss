@@ -1,0 +1,29 @@
+@import "../node_modules/tinper-bee-core/scss/minxin-variables";
+@import "../node_modules/tinper-bee-core/scss/minxin-mixins";
+.has-error{
+	.form-control {
+	    border-color: #a94442;
+	    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	}
+	.control-label {
+		color: #a94442;
+	}
+} 
+.has-success {
+	.form-control {
+	    border-color: #3c763d;
+	    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	}
+	.control-label {
+		color: #3c763d;
+	}
+} 
+.has-warning{
+	.control-label{
+		color: #8a6d3b;
+	}
+	.form-control {
+	    border-color: #8a6d3b;
+	    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	}
+}
