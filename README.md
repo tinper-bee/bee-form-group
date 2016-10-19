@@ -25,14 +25,12 @@ npm install --save bee-form-group
 ```
 组件调用
 ```js
-import FormGroup from 'bee-form-control';
+import FormGroup from 'bee-form-group';
 React.render(<div>
     <div>
-        <form-control />
-        <br>
-        <form-control placeholder="input placeholder" defaultValue="default value" />
-        <br/>
-        <form-control type="checkbox" />
+		<FormGroup> 
+			<FormControl type="text" />
+		</FormGroup>
     </div>
 </div>, document.getElementById('target'));
 ```
