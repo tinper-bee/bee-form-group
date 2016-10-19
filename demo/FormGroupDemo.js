@@ -1,7 +1,7 @@
-import { FormGroup } from '../src';
+import FormGroup from '../src';
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom';
-import { FormControl } from 'bee-form-control';
+import FormControl from 'bee-form-control';
 
 class Demo extends Component {
 	constructor(props){

@@ -1,2 +1,4 @@
 
-export FormGroup from './FormGroup';
+import FormGroup from './FormGroup';
+export default FormGroup ;
+

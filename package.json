@@ -32,7 +32,7 @@
   "pub": "bee-tools run pub"
  },
  "dependencies": {
-  "bee-form-control": "0.0.3",
+  "bee-form-control": "0.0.4",
   "classnames": "^2.2.5",
   "tinper-bee-core": "latest",
   "warning": "^3.0.0"
