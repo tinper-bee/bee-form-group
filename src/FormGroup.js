@@ -2,8 +2,7 @@ import classNames from 'classnames';
 import React from 'react';
 
 const propTypes = {
-  controlId: React.PropTypes.string,
-  validationState: React.PropTypes.oneOf(['success', 'warning', 'error']),
+  validationState: React.PropTypes.oneOf(['success', 'warning', 'error'])
 };
 
 class FormGroup extends React.Component {
@@ -12,16 +11,25 @@ class FormGroup extends React.Component {
     }
     render() {
 	    const { validationState, className, children, ...others } = this.props;
-	    let classes = {};
+	    /**
+		 * @title 默认显示类名’‘
+		 */
+	    let classes = {
+	    	'form-group': true
+	    };
+	    /**
+		 * @title badge 默认显示内容1
+		 */
 	    if(validationState){
 	    	classes[`has-${validationState}`] = true;
 	    }
+
 	    return (
 	      <div
 	        {...others}
 	        className={classNames(className,classes)}
 	      >
-	        {children}
+	      	{children}
 	      </div>
 	    );
     }

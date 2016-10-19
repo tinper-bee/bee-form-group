@@ -1,6 +1,5 @@
 import FormGroup from '../src';
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom';
 import FormControl from 'bee-form-control';
 
 class Demo extends Component {
@@ -10,19 +9,19 @@ class Demo extends Component {
 	render(){
 		return( 
 			<div>
-				<FormGroup controlId="FormGroup-Test"> 
+				<FormGroup> 
 					<FormControl type="text" />
 				</FormGroup>
 				<br/>
-				<FormGroup controlId="FormGroup-error" validationState="error"> 
+				<FormGroup validationState="error"> 
 					<FormControl type="text" />
 				</FormGroup>
 				<br/>
-				<FormGroup controlId="FormGroup-warn" validationState="warning"> 
+				<FormGroup validationState="warning"> 
 					<FormControl type="text" />
 				</FormGroup>
 				<br/>
-				<FormGroup controlId="FormGroup-success" validationState="success"> 
+				<FormGroup validationState="success"> 
 					<FormControl type="text" />
 				</FormGroup>
 			</div>

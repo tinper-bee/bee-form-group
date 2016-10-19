@@ -4,9 +4,9 @@
 [![devDependency Status](https://img.shields.io/david/dev/tinper-bee/bee-form-group.svg)](https://david-dm.org/tinper-bee/bee-form-group#info=devDependencies)
 
 
-react bee-form-group component for tinper-bee
+`FormGroup` 组件用来包裹像 `form control` `lable` `help text` `validate state`的元素
 
-#### setup develop environment
+#### 安装步骤
 
 ```sh
 $ git clone https://github.com/tinper-bee/bee-form-group
@@ -15,14 +15,44 @@ $ npm install
 $ npm run dev
 ```
 
-## Usage
+## 使用
 
-```js
-
+使用单独的bee-form-group包
+#### 组件引入
+先进行下载bee-form-group包
 ```
+npm install --save bee-form-group
+```
+组件调用
+```js
+import FormGroup from 'bee-form-control';
+React.render(<div>
+    <div>
+        <form-control />
+        <br>
+        <form-control placeholder="input placeholder" defaultValue="default value" />
+        <br/>
+        <form-control type="checkbox" />
+    </div>
+</div>, document.getElementById('target'));
+```
+#### 样式引入
+- 可以使用link引入dist目录下bee-form-group.css
+```
+<link rel="stylesheet" href="./node_modules/build/bee-form-group.css">
+```
+- 可以在js中import样式
+```js
+import "./node_modules/src/FormGroup.scss"
+//或是
+import "./node_modules/build/bee-form-group.css"
+```
+
 
 
 
 ## API
 |参数|说明|类型|默认值|
 |---|----|---|------|
+|validationState|oneOf:`success` `error` `warning`|string|''|
+
