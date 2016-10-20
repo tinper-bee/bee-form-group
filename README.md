@@ -26,6 +26,7 @@ npm install --save bee-form-group
 组件调用
 ```js
 import FormGroup from 'bee-form-group';
+import FormControl from 'bee-form-control';
 React.render(<div>
     <div>
 		<FormGroup> 

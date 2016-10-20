@@ -3,12 +3,12 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.FormGroup = undefined;
 
-var _FormGroup2 = require('./FormGroup');
+var _FormGroup = require('./FormGroup');
 
-var _FormGroup3 = _interopRequireDefault(_FormGroup2);
+var _FormGroup2 = _interopRequireDefault(_FormGroup);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-exports.FormGroup = _FormGroup3["default"];
+exports["default"] = _FormGroup2["default"];
+module.exports = exports['default'];
