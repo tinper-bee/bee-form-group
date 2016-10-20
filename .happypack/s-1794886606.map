@@ -1,1 +1,0 @@
-{"version":3,"sources":["src\\index.js"],"names":["FormGroup"],"mappings":";;;;;;;;;;;;;QACOA,S","file":"index.js","sourceRoot":"E:/New/tinper/react-comp/bee-form-group","sourcesContent":["\r\nexport FormGroup from './FormGroup';\r\n"]}
