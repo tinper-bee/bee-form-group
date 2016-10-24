@@ -1,6 +1,7 @@
 # bee-form-group
 [![npm version](https://img.shields.io/npm/v/bee-form-group.svg)](https://www.npmjs.com/package/bee-form-group)
 [![Build Status](https://img.shields.io/travis/tinper-bee/bee-form-group/master.svg)](https://travis-ci.org/tinper-bee/bee-form-group)
+[![Coverage Status](https://coveralls.io/repos/github/tinper-bee/bee-form-group/badge.svg?branch=master)](https://coveralls.io/github/tinper-bee/bee-form-group?branch=master)
 [![devDependency Status](https://img.shields.io/david/dev/tinper-bee/bee-form-group.svg)](https://david-dm.org/tinper-bee/bee-form-group#info=devDependencies)
 
 
