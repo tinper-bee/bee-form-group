@@ -5974,6 +5974,11 @@ $color-accent: $palette-pink-A200 !default;
 .has-error .control-label {
   color: #a94442; }
 
+.has-error .input-group-addon {
+  color: #a94442;
+  border-color: #a94442;
+  background-color: #f2dede; }
+
 .has-success .form-control {
   border-color: #3c763d;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
@@ -5981,12 +5986,22 @@ $color-accent: $palette-pink-A200 !default;
 .has-success .control-label {
   color: #3c763d; }
 
+.has-success .input-group-addon {
+  color: #3c763d;
+  border-color: #3c763d;
+  background-color: #dff0d8; }
+
 .has-warning .control-label {
   color: #8a6d3b; }
 
 .has-warning .form-control {
   border-color: #8a6d3b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+
+.has-warning .input-group-addon {
+  color: #8a6d3b;
+  border-color: #8a6d3b;
+  background-color: #fcf8e3; }
 
 .form-group {
   margin-bottom: 15px; }
