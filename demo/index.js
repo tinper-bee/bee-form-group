@@ -32,7 +32,7 @@ function demo2() {
     );
 }
 
-function demo2() {
+function demo3() {
     return (
         <div className="demo-form-group">
             <FormGroup validationState="error"> 
@@ -50,3 +50,4 @@ function demo2() {
 
 ReactDOM.render(demo1(), document.getElementById('ReactFormGroupDemo1'));
 ReactDOM.render(demo2(), document.getElementById('ReactFormGroupDemo2'));
+ReactDOM.render(demo3(), document.getElementById('ReactFormGroupDemo3'));
