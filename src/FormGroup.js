@@ -1,33 +1,32 @@
-import classNames from 'classnames';
-import React from 'react';
+import classnames from 'classnames';
+import React, { PropTypes} from 'react';
 
 const propTypes = {
-  validationState: React.PropTypes.oneOf(['success', 'warning', 'error'])
+  validationState: PropTypes.oneOf(['success', 'warning', 'error'])
 };
+const defaultProps = {
+	clsPrefix: 'u-form-group'
+}
 
 class FormGroup extends React.Component {
     constructor(props) {
     	super(props);
     }
     render() {
-	    const { validationState, className, children, ...others } = this.props;
-	    /**
-		 * @title 默认显示类名’‘
-		 */
-	    let classes = {
-	    	'form-group': true
-	    };
-	    /**
-		 * @title badge 默认显示内容1
-		 */
+	    const { validationState, className, children,clsPrefix, ...others } = this.props;
+
+	    let classes = {};
+
 	    if(validationState){
 	    	classes[`has-${validationState}`] = true;
 	    }
 
+	    let classNames = classnames(clsPrefix,classes);
+
 	    return (
 	      <div
 	        {...others}
-	        className={classNames(className,classes)}
+	        className={classnames(className,classNames)}
 	      >
 	      	{children}
 	      </div>
@@ -36,5 +35,6 @@ class FormGroup extends React.Component {
 }
 
 FormGroup.propTypes = propTypes;
+FormGroup.defaultProps = defaultProps;
 
 export default FormGroup

@@ -33,9 +33,10 @@
     "coveralls": "bee-tools run coverage"
   },
   "dependencies": {
-    "bee-control-label": "0.0.4",
-    "bee-form-control": "0.0.6",
+    "bee-control-label": "^0.1.0",
+    "bee-form-control": "^0.1.0",
     "bee-input-group": "0.0.5",
+    "bee-input-group-addon": "^0.1.0",
     "classnames": "^2.2.5",
     "tinper-bee-core": "latest",
     "warning": "^3.0.0"

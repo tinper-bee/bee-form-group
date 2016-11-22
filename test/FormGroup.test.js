@@ -7,7 +7,7 @@ import FormGroup from '../src/index';
 describe('Enzyme Shallow', function () {
   it('FormGroup should be exist', function () {
     let formGroup = shallow(<FormGroup/>);
-    expect(formGroup.hasClass('form-group')).to.equal(true);
+    expect(formGroup.hasClass('u-form-group')).to.equal(true);
   });
 });
 describe('ValidateState should be displayed', function () {
