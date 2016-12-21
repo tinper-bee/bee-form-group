@@ -1,6 +1,6 @@
 /**
- * @title 
- * @description
+ * @title  FromGroup 三种校验状态实例
+ * @description `validationState`参数控制状态颜色
  */
 class Demo1 extends Component {
 	render () {

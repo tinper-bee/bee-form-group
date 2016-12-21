@@ -1,6 +1,6 @@
 /**
- * @title 
- * @description 
+ * @title FormGroup 动态校验实例
+ * @description 限制只能输入数字
  */
 class Demo2 extends Component {
     constructor (props) {
