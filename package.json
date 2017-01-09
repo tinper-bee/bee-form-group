@@ -1,6 +1,6 @@
 {
  "name": "bee-form-group",
- "version": "1.0.9",
+ "version": "1.0.10",
  "description": "bee-form-group ui component for react",
  "keywords": [
   "react",
@@ -33,20 +33,18 @@
   "coveralls": "bee-tools run coverage"
  },
  "dependencies": {
-  "bee-control-label": "latest",
-  "bee-form-control": "^0.1.2",
+  "bee-form-control": "latest",
   "bee-input-group": "latest",
-  "bee-input-group-addon": "latest",
   "classnames": "^2.2.5",
-  "tinper-bee-core": "0.0.10",
+  "tinper-bee-core": "latest",
   "warning": "^3.0.0"
  },
  "devDependencies": {
   "chai": "^3.5.0",
   "enzyme": "^2.4.1",
-  "react": "~0.14.0",
+  "react": "15.3.2",
   "react-addons-test-utils": "15.3.2",
-  "react-dom": "~0.14.0",
+  "react-dom": "15.3.2",
   "bee-panel": "latest",
   "bee-layout": "latest",
   "bee-button": "latest"
