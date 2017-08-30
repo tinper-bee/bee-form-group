@@ -2,6 +2,10 @@
  * @title FormGroup 动态校验实例
  * @description 限制只能输入数字
  */
+import React, { Component } from 'react';
+import FormControl from 'bee-form-control';
+import FormGroup from '../../src';
+
 class Demo2 extends Component {
     constructor (props) {
         super(props);
@@ -35,3 +39,5 @@ class Demo2 extends Component {
     }
 
 }
+
+export default Demo2

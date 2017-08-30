@@ -13,63 +13,7 @@ const CARET = <i className="uf uf-arrow-down"></i>;
 const CARETUP = <i className="uf uf-arrow-up"></i>;
 
 
-/**
- * @title  FromGroup 三种校验状态实例
- * @description `validationState`参数控制状态颜色
- */
-class Demo1 extends Component {
-	render () {
-		return (
-			<div className="demo-form-group">
-	        	<FormGroup validationState="error"> 
-					<FormControl type="text" />
-				</FormGroup>	
-				<FormGroup validationState="warning"> 
-					<FormControl type="text" />
-				</FormGroup>	
-				<FormGroup validationState="success"> 
-					<FormControl type="text" />
-				</FormGroup>			
-	        </div>
-		)
-	}
-}/**
- * @title FormGroup 动态校验实例
- * @description 限制只能输入数字
- */
-class Demo2 extends Component {
-    constructor (props) {
-        super(props);
-        this.state = {
-            value: ''
-        }
-    }
-    validateState () {
-
-        if ( this.state.value == "" ) {
-            return "warning";
-        }
-        if ( /^[0-9]*$/.test(this.state.value) ) {
-            return "success";
-        } else {
-            return "error"
-        }
-    }
-
-    handerChange (e) {
-        this.setState({value:e.target.value});
-    }
-    render (){
-        return( 
-            <div className="demo-form-control">
-                <FormGroup ref='demo3FormGroup' validationState={this.validateState()}>
-                    <FormControl ref="demo3FormControl" placeholder="只能输入数字" value={this.state.value} onChange={this.handerChange.bind(this)}/> 
-                </FormGroup>
-            </div>
-        )
-    }
-
-}var DemoArray = [{"example":<Demo1 />,"title":"  FromGroup 三种校验状态实例","code":"/**\n * @title  FromGroup 三种校验状态实例\n * @description `validationState`参数控制状态颜色\n */\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-form-group\">\n\t        \t<FormGroup validationState=\"error\"> \n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t</FormGroup>\t\n\t\t\t\t<FormGroup validationState=\"warning\"> \n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t</FormGroup>\t\n\t\t\t\t<FormGroup validationState=\"success\"> \n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t</FormGroup>\t\t\t\n\t        </div>\n\t\t)\n\t}\n}","desc":" `validationState`参数控制状态颜色"},{"example":<Demo2 />,"title":" FormGroup 动态校验实例","code":"/**\n * @title FormGroup 动态校验实例\n * @description 限制只能输入数字\n */\nclass Demo2 extends Component {\n    constructor (props) {\n        super(props);\n        this.state = {\n            value: ''\n        }\n    }\n    validateState () {\n\n        if ( this.state.value == \"\" ) {\n            return \"warning\";\n        }\n        if ( /^[0-9]*$/.test(this.state.value) ) {\n            return \"success\";\n        } else {\n            return \"error\"\n        }\n    }\n\n    handerChange (e) {\n        this.setState({value:e.target.value});\n    }\n    render (){\n        return( \n            <div className=\"demo-form-control\">\n                <FormGroup ref='demo3FormGroup' validationState={this.validateState()}>\n                    <FormControl ref=\"demo3FormControl\" placeholder=\"只能输入数字\" value={this.state.value} onChange={this.handerChange.bind(this)}/> \n                </FormGroup>\n            </div>\n        )\n    }\n\n}","desc":" 限制只能输入数字"}]
+var Demo1 = require("./demolist/Demo1");var Demo2 = require("./demolist/Demo2");var DemoArray = [{"example":<Demo1 />,"title":"  FromGroup 三种校验状态实例","code":"/**\n * @title  FromGroup 三种校验状态实例\n * @description `validationState`参数控制状态颜色\n */\n\nimport { Component } from 'react';\nimport FormControl from 'bee-form-control';\nimport FormGroup from 'tinper-bee';\n\n class Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-form-group\">\n\t        \t<FormGroup validationState=\"error\"> \n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t</FormGroup>\t\n\t\t\t\t<FormGroup validationState=\"warning\"> \n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t</FormGroup>\t\n\t\t\t\t<FormGroup validationState=\"success\"> \n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t</FormGroup>\t\t\t\n\t        </div>\n\t\t)\n\t}\n}\n\n","desc":" `validationState`参数控制状态颜色"},{"example":<Demo2 />,"title":" FormGroup 动态校验实例","code":"/**\n * @title FormGroup 动态校验实例\n * @description 限制只能输入数字\n */\nimport React, { Component } from 'react';\nimport FormControl from 'bee-form-control';\nimport FormGroup from 'tinper-bee';\n\nclass Demo2 extends Component {\n    constructor (props) {\n        super(props);\n        this.state = {\n            value: ''\n        }\n    }\n    validateState () {\n\n        if ( this.state.value == \"\" ) {\n            return \"warning\";\n        }\n        if ( /^[0-9]*$/.test(this.state.value) ) {\n            return \"success\";\n        } else {\n            return \"error\"\n        }\n    }\n\n    handerChange (e) {\n        this.setState({value:e.target.value});\n    }\n    render (){\n        return( \n            <div className=\"demo-form-control\">\n                <FormGroup ref='demo3FormGroup' validationState={this.validateState()}>\n                    <FormControl ref=\"demo3FormControl\" placeholder=\"只能输入数字\" value={this.state.value} onChange={this.handerChange.bind(this)}/> \n                </FormGroup>\n            </div>\n        )\n    }\n\n}\n\n","desc":" 限制只能输入数字"}]
 
 
 class Demo extends Component {

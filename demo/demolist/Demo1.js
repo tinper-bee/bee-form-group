@@ -2,7 +2,12 @@
  * @title  FromGroup 三种校验状态实例
  * @description `validationState`参数控制状态颜色
  */
-class Demo1 extends Component {
+
+import { Component } from 'react';
+import FormControl from 'bee-form-control';
+import FormGroup from '../../src';
+
+ class Demo1 extends Component {
 	render () {
 		return (
 			<div className="demo-form-group">
@@ -19,3 +24,5 @@ class Demo1 extends Component {
 		)
 	}
 }
+
+export default  Demo1 
