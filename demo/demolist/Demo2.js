@@ -26,7 +26,7 @@ class Demo2 extends Component {
     }
 
     handerChange (e) {
-        this.setState({value:e.target.value});
+        this.setState({value:e});
     }
     render (){
         return( 
