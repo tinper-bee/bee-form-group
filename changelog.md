@@ -1,3 +1,10 @@
-|时间|说明|修复版本|
-|---|----|---|
-|2017-8-30|修改示例|1.0.11|
+<a name="1.0.13"></a>
+## 1.0.13 (2017-11-15)
+
+
+### Bug Fixes
+
+* **bee-form-control:** change dependencies ([c20d97a](https://github.com/tinper-bee/bee-form-group/commit/c20d97a))
+
+
+
